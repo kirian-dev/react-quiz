@@ -36,7 +36,14 @@ You can try the application live at the following URL:
     npm run dev
 ```
 
-The app will be running at http://localhost:5173.
+The app will be running at http://localhost:5173
+
+## CI/CD for Deployment
+This project uses CI/CD pipelines to automate the deployment process. Every push to the repository triggers the build and deployment of the application to an S3 bucket, making it available on a static website hosting.
+
+### The pipeline is configured to:
+- Build the project.
+- Deploy the static files (HTML, CSS, JS) to an S3 bucket for hosting.
 
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
