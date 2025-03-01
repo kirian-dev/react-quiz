@@ -1,0 +1,54 @@
+@import '@/styles/variables.css';
+
+.verticalBlock {
+  padding: 30px 24px;
+  border-radius: 12px;
+  background-color: var(--violet-color);
+  font-weight: 600;
+  line-height: 20px;
+  font-size: 14px;
+  width: fit-content;
+  display: grid;
+  place-items: center;
+}
+
+.list {
+  width: 100%;
+}
+
+.verticalList {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.genderSmile {
+  font-size: 52px;
+  line-height: 70px;
+}
+
+.stepWrapper {
+  width: 100%;
+  height: 100%;
+  max-width: 768px;
+  display: flex;
+  flex-direction: column;
+}
+
+.buttonWrapper {
+  margin-top: auto;
+  display: grid;
+  place-items: center;
+}
+
+.topicList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+  margin-top: 20px;
+  flex-direction: row;
+}

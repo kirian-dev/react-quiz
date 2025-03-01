@@ -1,0 +1,10 @@
+@import '@/styles/variables.css';
+
+.title {
+  font-size: 28px;
+  line-height: 34px;
+  color: var(--grey-light-color);
+  font-weight: 700;
+  margin-bottom: 16px;
+  text-align: center;
+}

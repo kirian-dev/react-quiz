@@ -1,0 +1,9 @@
+export const QUIZ_BASE_PATH = '/quiz';
+export const EMAIL_PATH = '/email';
+export const FIRST_STEP_INDEX = 0;
+export const NOT_FOUND_INDEX = -1;
+export const NEXT_STEP_OFFSET = 2;
+export const LOADER_TEXT = 'Finding collections for you...';
+export const QUESTION_NOT_FOUND = 'Question not found';
+export const TOTAL_STEPS = 5;
+export const MIN_SELECTED_ITEMS = 2;
