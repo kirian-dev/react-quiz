@@ -1,54 +1,42 @@
-# React + TypeScript + Vite
+# React Quiz
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React Quiz is a React and TypeScript-based application designed for creating quizzes and surveys with questions and answers. The project includes multilingual support using `i18next` and leverages modern technologies such as React Router for routing and Vite for fast building.
 
-Currently, two official plugins are available:
+## Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+You can try the application live at the following URL:  
+[React Quiz](http://react-typescript-quiz.s3-website-us-east-1.amazonaws.com/quiz/1)
 
-## Expanding the ESLint configuration
+## Technologies
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React** (for building the user interface)
+- **TypeScript** (for strict typing)
+- **Vite** (for fast development and build)
+- **i18next** (for multilingual support)
+- **React Router** (for routing)
+- **Prettier** (for code formatting)
+- **ESLint** (for linting)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
+## Installation and Setup
+
+1. Clone the repository:
+```bash
+    git clone https://github.com/your-username/react-quiz.git
+```
+2. Navigate into the project directory:
+```bash
+  cd react-quiz
+```
+3. Install dependencies:
+```bash
+    npm install
+```
+4. Start the development server:
+```bash
+    npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+The app will be running at http://localhost:5173.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x';
-import reactDom from 'eslint-plugin-react-dom';
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-});
-```
+License
+This project is licensed under the MIT License - see the LICENSE file for details.

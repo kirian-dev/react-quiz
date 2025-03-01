@@ -49,12 +49,7 @@ export const useQuiz = () => {
   );
 
   const handleCompleteLoader = useCallback(() => {
-    try {
-      navigate(consts.EMAIL_PATH, { replace: true });
-      setShowLoader(false);
-    } catch (error) {
-      console.error('Failed to navigate to email path:', error);
-    }
+    navigate(consts.EMAIL_PATH, { replace: true });
   }, [navigate]);
 
   return {
