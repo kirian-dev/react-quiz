@@ -1,3 +1,5 @@
+@import './variables.css';
+
 *,
 *::before,
 *::after {
@@ -13,8 +15,8 @@ body {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  background-color: #1f002b;
-  color: #fff;
+  background-color: var(--dark-violet);
+  color: var(--text-color);
   font-family: 'Nunito', sans-serif;
   overflow-x: hidden;
 }
@@ -74,7 +76,7 @@ img {
 }
 
 .text-color-pink {
-  color: #eb2f9a;
+  color: var(--primary-color);
 }
 
 .privacy-text {

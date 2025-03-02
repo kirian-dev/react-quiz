@@ -11,9 +11,9 @@
 .input {
   padding: 20px 26px;
   border-radius: 16px;
-  background-color: var(--dark-violet);
+  background-color: var(--light-violet);
   color: var(--text-color);
-  border: 2px solid var(--dark-violet);
+  border: 2px solid var(--light-violet);
   outline: none;
   transition:
     border 0.3s,
@@ -21,7 +21,7 @@
 }
 
 .input:focus {
-  border-color: var(--dark-violet);
+  border-color: var(--light-violet);
   box-shadow: 0 0 6px rgba(99, 102, 241, 0.5);
 }
 

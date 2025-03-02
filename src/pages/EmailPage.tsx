@@ -1,7 +1,7 @@
 import { Title } from '@/components/title';
 import { Button } from '@/components/button';
 import { useTranslation } from 'react-i18next';
-import { InputField } from '@/components/Input-field/InputField';
+import { InputField } from '@/components/input-field/InputField';
 import { useEmailValidator } from '@/hooks/useEmailValidation';
 import { FC, useState, ChangeEvent } from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -18,13 +18,11 @@ export const EmailPage: FC = () => {
   };
 
   const navigateToThankYouPage = () => {
-    if (!error) {
-      try {
-        QuizStorageService.saveEmail(email);
-        navigate('/thank-you');
-      } catch (err) {
-        console.log('Failed to save email', err);
-      }
+    try {
+      QuizStorageService.saveEmail(email);
+      navigate('/thank-you');
+    } catch (err) {
+      console.log('Failed to save email', err);
     }
   };
 
