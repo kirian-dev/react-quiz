@@ -1,9 +1,9 @@
+import { FC, useState, ChangeEvent } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Title } from '@/components/title';
 import { Button } from '@/components/button';
 import { useTranslation } from 'react-i18next';
 import { useEmailValidator } from '@/hooks/useEmailValidation';
-import { FC, useState, ChangeEvent } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { QuizStorageService } from '@/services/QuizStorageService';
 import { InputField } from '@/components/input-field';
 

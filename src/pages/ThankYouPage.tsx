@@ -1,11 +1,12 @@
+import { FC } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
 import { Button } from '../components/button';
 import { Title } from '@/components/title';
 import checkIcon from '@/assets/check-success.svg';
 import downloadIcon from '@/assets/download.svg';
 import { QuizStorageService } from '@/services/QuizStorageService';
-import { useNavigate } from 'react-router-dom';
-import { FC } from 'react';
+
 import { useDownloadQuizAnswers } from '@/hooks/useDownloadQuizAnswers';
 
 export const ThankYouPage: FC = () => {
