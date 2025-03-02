@@ -21,7 +21,7 @@ You can try the application live at the following URL:
 
 1. Clone the repository:
 ```bash
-    git clone https://github.com/your-username/react-quiz.git
+    git clone https://github.com/kirian-dev/react-quiz.git
 ```
 2. Navigate into the project directory:
 ```bash
